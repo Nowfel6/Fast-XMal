@@ -20,6 +20,16 @@ Official code and artifacts for the paper:
 
 ---
 
+### 📈 Temperature-Sharpened OOF-KD Alpha Sensitivity
+
+The 101-point parametric grid search ($\alpha \in [0.00, 1.00]$, step = $0.01$, with $T=0.25$) on development 5-fold cross-validation identifies $\alpha = 0.90$ as a stable operating point (94.08% accuracy, 92.97% Macro F1):
+
+<p align="center">
+  <img src="figures/v7_fig9_alpha_sweep.png" alt="Alpha Sweep Sensitivity Curve" width="650"/>
+</p>
+
+---
+
 ## 📂 Repository Structure
 
 ```text
@@ -45,6 +55,7 @@ Official code and artifacts for the paper:
 └── models/                            # Pre-trained frozen model artifacts
     ├── v7_fast_xmal_student.txt        # 369.59 KB native LightGBM text model
     └── v7_fast_xmal_student.joblib     # 371 KB joblib model
+|__ figures/                            # all important figures
 ```
 
 ---
